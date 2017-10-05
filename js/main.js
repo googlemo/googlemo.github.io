@@ -54,6 +54,11 @@ $(document).ready(function() {
         }
     }
 
+    function g() { //google search fallback
+        q = $("#term").val()
+        window.location.href = "https://www.google.com.ph/search?q=" + encodeURI(q)
+    }
+
     var a = {
         type: "web",
         append: !1,
@@ -66,7 +71,8 @@ $(document).ready(function() {
     })
 
     $("#searchBtn").on("click", function() {
-        $('#resultsDiv').animatescroll();
-        return e(a), !1
+        // $('#resultsDiv').animatescroll();
+        // return e(a), !1
+        g()
     })
 });
