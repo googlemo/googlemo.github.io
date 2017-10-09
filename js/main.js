@@ -75,4 +75,8 @@ $(document).ready(function() {
         // return e(a), !1
         g()
     })
+    //temporary 
+	if (window.location.hash == ""){
+		window.location.hash = "go";
+	}
 });
